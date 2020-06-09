@@ -23,6 +23,7 @@ requirements:
     - blessed
     - readchar
     - python-editor
+    - setuptools
 
 test:
   imports:
