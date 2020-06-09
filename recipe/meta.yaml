@@ -1,15 +1,15 @@
 {% set name = "inquirer" %}
-{% set version = "2.6.3" %}
+{% set version = "2.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5f6e5dcbc881f43554b6fdfea245e417c6ed05c930cdb6e09b5df7357c288e06
+  url: https://github.com/magmax/python-inquirer/archive/{{ version }}.tar.gz
+  sha256: 0ed6c9ee4a6eab6d914dfe08903430066a2222234ca0146760471270d93f0992
 
-build: 
+build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
@@ -20,9 +20,10 @@ requirements:
     - python
   run:
     - python
-    - blessings
+    - blessed
     - readchar
     - python-editor
+    - setuptools
 
 test:
   imports:
