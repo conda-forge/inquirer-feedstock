@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/magmax/python-inquirer/archive/{{ version }}.tar.gz
-  sha256: e819188de0ca7985a99c282176c6f50fb08b0d33867fd1965d3f3e97d6c8f83f
+  sha256: 0ed6c9ee4a6eab6d914dfe08903430066a2222234ca0146760471270d93f0992
 
 build:
   number: 0
