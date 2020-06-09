@@ -20,7 +20,7 @@ requirements:
     - python
   run:
     - python
-    - blessings
+    - blessed
     - readchar
     - python-editor
 
