@@ -1,16 +1,16 @@
 {% set name = "inquirer" %}
-{% set version = "2.7.0" %}
+{% set version = "2.9.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/magmax/python-inquirer/archive/{{ version }}.tar.gz
-  sha256: 0ed6c9ee4a6eab6d914dfe08903430066a2222234ca0146760471270d93f0992
+  url: https://github.com/magmax/python-inquirer/archive/v{{ version }}.tar.gz
+  sha256: 5daa3b37003677b826e29635a4b741324436a70772f503cbf9530e35f0be6c40
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
