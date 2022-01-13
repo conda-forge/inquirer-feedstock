@@ -1,35 +1,40 @@
 {% set name = "inquirer" %}
-{% set version = "2.7.0" %}
+{% set version = "2.9.1" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/magmax/python-inquirer/archive/{{ version }}.tar.gz
-  sha256: 0ed6c9ee4a6eab6d914dfe08903430066a2222234ca0146760471270d93f0992
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/inquirer-{{ version }}.tar.gz
+  sha256: 65f0a8eaa8bcabd7ec65771c9f872bb2700753c23bbe8b8ff12efd264a9dbf5d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.7
+    - poetry
   run:
-    - python
-    - blessed
-    - readchar
-    - python-editor
-    - setuptools
+    - blessed >=1.19.0
+    - python >=3.7
+    - python-editor >=1.0.4
+    - readchar >=2.0.1
+    - poetry
 
 test:
   imports:
     - inquirer
     - inquirer.render
-    - inquirer.render.console
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/magmax/python-inquirer
@@ -41,6 +46,3 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
-    - benhuff
-    - oblute
-    - rluria14
