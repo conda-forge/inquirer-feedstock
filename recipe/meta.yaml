@@ -1,5 +1,5 @@
 {% set name = "inquirer" %}
-{% set version = "2.9.1" %}
+{% set version = "2.9.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/inquirer-{{ version }}.tar.gz
-  sha256: 65f0a8eaa8bcabd7ec65771c9f872bb2700753c23bbe8b8ff12efd264a9dbf5d
+  sha256: 4a53cb9386601476e9f3241adace469ae6d1143ace2ee82f2768149e85861ab8
 
 build:
   number: 0
