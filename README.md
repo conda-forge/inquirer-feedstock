@@ -1,11 +1,11 @@
-About inquirer
-==============
+About inquirer-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/inquirer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/magmax/python-inquirer
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/inquirer-feedstock/blob/main/LICENSE.txt)
 
 Summary: Collection of common interactive command line user interfaces, based on Inquirer.js
 
