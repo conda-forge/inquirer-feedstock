@@ -11,7 +11,7 @@ source:
   sha256: 958dbd5978f173630756a6ed6243acf931e750416eb7a6ed3a0ff13af0fdfcb5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,7 +25,6 @@ requirements:
     - python >=3.7
     - python-editor >=1.0.4
     - readchar >=2.0.1
-    - poetry
 
 test:
   imports:
