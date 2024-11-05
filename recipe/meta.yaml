@@ -41,7 +41,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Collection of common interactive command line user interfaces, based on Inquirer.js
+  summary: Collection of common interactive command line user interfaces,  based on Inquirer.js
 
 extra:
   recipe-maintainers:
