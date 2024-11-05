@@ -1,5 +1,5 @@
 {% set name = "inquirer" %}
-{% set version = "3.1.4" %}
+{% set version = "3.4.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/inquirer-{{ version }}.tar.gz
-  sha256: 958dbd5978f173630756a6ed6243acf931e750416eb7a6ed3a0ff13af0fdfcb5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/inquirer-{{ version }}.tar.gz
+  sha256: 8edc99c076386ee2d2204e5e3653c2488244e82cb197b2d498b3c1b5ffb25d0b
 
 build:
   number: 0
@@ -18,14 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - poetry
+    - setuptools
   run:
     - blessed >=1.19.0
-    - python >=3.7
-    - python-editor >=1.0.4
-    - readchar >=2.0.1
-    - poetry
+    - python >=3.8
+    - readchar >=4.2.0
+    - editor >=1.6.0
 
 test:
   imports:
@@ -46,3 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - mxr-conda
+    - nicornk
