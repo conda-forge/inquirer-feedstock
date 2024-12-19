@@ -11,19 +11,19 @@ source:
   sha256: 8edc99c076386ee2d2204e5e3653c2488244e82cb197b2d498b3c1b5ffb25d0b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - poetry
     - setuptools
   run:
     - blessed >=1.19.0
-    - python >=3.8
+    - python >={{ python_min }}
     - readchar >=4.2.0
     - editor >=1.6.0
 
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/magmax/python-inquirer
